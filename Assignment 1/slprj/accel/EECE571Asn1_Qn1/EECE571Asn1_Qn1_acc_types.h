@@ -1,0 +1,7 @@
+#ifndef EECE571Asn1_Qn1_acc_types_h_
+#define EECE571Asn1_Qn1_acc_types_h_
+typedef struct P_Subsystempi2delay_EECE571Asn1_Qn1_T_
+P_Subsystempi2delay_EECE571Asn1_Qn1_T ; typedef struct
+P_Subsystem1_EECE571Asn1_Qn1_T_ P_Subsystem1_EECE571Asn1_Qn1_T ; typedef
+struct P_EECE571Asn1_Qn1_T_ P_EECE571Asn1_Qn1_T ;
+#endif
