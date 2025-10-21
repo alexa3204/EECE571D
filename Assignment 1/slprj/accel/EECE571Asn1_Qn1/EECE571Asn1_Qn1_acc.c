@@ -16,7 +16,7 @@
 #define CodeFormat S-Function
 #define AccDefine1 Accelerator_S-Function
 #include "simtarget/slAccSfcnBridge.h"
-#ifndef __RTW_UTFREE__  
+#ifndef __RTW_UTFREE__  
 extern void * utMalloc ( size_t ) ; extern void utFree ( void * ) ;
 #endif
 boolean_T EECE571Asn1_Qn1_acc_rt_TDelayUpdateTailOrGrowBuf ( int_T * bufSzPtr
@@ -66,9 +66,9 @@ _rtZCSV -> RelationalOperator_RelopInput_ZC = _rtB -> B_9_71_568 [ 0 ] - _rtB
 B_9_71_568 [ 1 ] - _rtB -> B_9_77_616 ; _rtZCSV ->
 RelationalOperator2_RelopInput_ZC = _rtB -> B_9_71_568 [ 2 ] - _rtB ->
 B_9_77_616 ; } static void mdlInitializeSizes ( SimStruct * S ) {
-ssSetChecksumVal ( S , 0 , 3178922548U ) ; ssSetChecksumVal ( S , 1 ,
-564069545U ) ; ssSetChecksumVal ( S , 2 , 233158477U ) ; ssSetChecksumVal ( S
-, 3 , 4044659489U ) ; { mxArray * slVerStructMat = ( NULL ) ; mxArray *
+ssSetChecksumVal ( S , 0 , 1998396478U ) ; ssSetChecksumVal ( S , 1 ,
+4109441946U ) ; ssSetChecksumVal ( S , 2 , 606354522U ) ; ssSetChecksumVal ( S
+, 3 , 617520912U ) ; { mxArray * slVerStructMat = ( NULL ) ; mxArray *
 slStrMat = mxCreateString ( "simulink" ) ; char slVerChar [ 10 ] ; int status
 = mexCallMATLAB ( 1 , & slVerStructMat , 1 , & slStrMat , "ver" ) ; if ( status
 == 0 ) { mxArray * slVerMat = mxGetField ( slVerStructMat , 0 , "Version" ) ;

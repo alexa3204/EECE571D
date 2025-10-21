@@ -1,0 +1,7 @@
+-I"C:/Users/alexapf.stu/EECE571D/Assignment 1"
+-I"C:/Users/alexapf.stu/EECE571D/Assignment 1/slprj/accel/EECE571Asn1_Qn1_Reactive"
+-I"C:/Program Files/MATLAB/R2024b/extern/include"
+-I"C:/Program Files/MATLAB/R2024b/simulink/include"
+-I"C:/Program Files/MATLAB/R2024b/rtw/c/src"
+-I"C:/Program Files/MATLAB/R2024b/toolbox/physmod/powersys/facts/facts"
+-I"C:/Program Files/MATLAB/R2024b/toolbox/physmod/powersys/DR/DR"
