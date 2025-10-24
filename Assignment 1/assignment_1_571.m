@@ -8,7 +8,7 @@ fprintf('V̂_s = %.2f V\n', Vs_peak);
 
 %% Design parameters
 zeta = 0.707;    % Damping ratio
-wn = 110;        % Natural frequency (rad/s)
+wn = 61.1;        % Natural frequency (rad/s)
 
 % Calculate K_T and K_I (slide notation)
 K_T = 2*zeta*wn / Vs_peak;
