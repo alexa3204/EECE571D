@@ -9,6 +9,7 @@ V_sm = 2e3; % initial cap voltage per sm
 fc = 1650; % carrier frequency 
 T = 1/fc; 
 
+[s1, s2, s3, s4] = voltage_balancing(1,1.1,0.9,1.2,-1,2)
 
 %% 
 function [S1, S2, S3, S4] = voltage_balancing(V_C1, V_C2, V_C3, V_C4, i_arm, N_insert)
