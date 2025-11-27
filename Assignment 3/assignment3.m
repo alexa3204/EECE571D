@@ -9,3 +9,6 @@ V_sm = 2e3; % initial cap voltage per sm
 fc = 1650; % carrier frequency 
 T = 1/fc; 
 
+%%
+
+Simulink.exportToVersion('Assignment3_2_MMC', 'Assignment3_2_MMC_2024a.slx', 'R2024a')
