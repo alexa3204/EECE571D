@@ -12,3 +12,38 @@ T = 1/fc;
 %%
 
 Simulink.exportToVersion('Assignment3_2_MMC', 'Assignment3_2_MMC_2024a.slx', 'R2024a')
+
+%%
+[S1, S2, S3, S4] = voltage_balancing(1, 1.1, 0.9, 1.2, -1, 2)
+
+%%
+function [S1, S2, S3, S4] = voltage_balancing(V_C1, V_C2, V_C3, V_C4, i_arm, N_insert)
+    
+    % Create array: [SM_index, voltage]
+    SM_array = [1, V_C1;
+                2, V_C2;
+                3, V_C3;
+                4, V_C4];
+    
+    % Sort based on current direction
+    if i_arm > 0
+        % Charging: sort ascending (lowest voltage first)
+        [~, sort_idx] = sort(SM_array(:,2), 'ascend');
+    else
+        % Discharging: sort descending (highest voltage first)
+        [~, sort_idx] = sort(SM_array(:,2), 'descend');
+    end
+    
+    % Reorder based on sorted indices
+    SM_sorted = SM_array(sort_idx, :);
+    
+    % Select first N_insert SMs
+    selected_indices = SM_sorted(1:N_insert, 1);
+    
+    % Generate gate signals (1 if selected, 0 if not)
+    S1 = any(selected_indices == 1);
+    S2 = any(selected_indices == 2);
+    S3 = any(selected_indices == 3);
+    S4 = any(selected_indices == 4);
+    
+end
