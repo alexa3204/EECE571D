@@ -11,7 +11,8 @@ fc = 1650; % carrier frequency
 T = 1/fc; 
 
 %sim = sim('Assignment3_2_MMC.slx')
-sim = sim(['Assignment3_3_noCC'])
+%sim = sim(['Assignment3_3_noCC'])
+sim = sim(['Assignment3_4_nosort.slx'])
 %%
 
 % Simulink.exportToVersion('Assignment3_2_MMC', 'Assignment3_2_MMC_2024a.slx', 'R2024a')
@@ -37,7 +38,7 @@ Vaup_sm4_data = sim.logsout.get('Vaup_sm4');
 figure('Color', 'white');
 plot(Id_ref_data.Values.Time, Id_ref_data.Values.Data, 'r--', 'LineWidth', 1.5);
 hold on;
-plot(Id_data.Values.Time, Id_data.Values.Data, 'b-', 'LineWidth', 1.5);
+plot(Id_data.Values.Time, Id_data.Values.Data, 'b    -', 'LineWidth', 1.5);
 xlabel('Time (s)');
 ylabel('Current (A)');
 title('d-axis Current Tracking');
